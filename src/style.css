@@ -1,0 +1,97 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+body{
+    background: url("https://www.wowpatterns.com/assets/files/resource_images/house-pattern.jpg") repeat 0 0;
+    animation: desplazamiento 10s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes desplazamiento {
+    100% {
+      background-position: 580px 580px;
+    }
+  }
+
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+}
+
+nav h1, nav p{margin: 7px 0;}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+.slogan{font-size: 60px;}
+
+.banner p{
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+label{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+select{
+    padding: 10px;
+    border: 1px solid #212529;
+    border-radius: 4px;
+    font-size: 18px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.seleccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.canvasContainer{
+    position: absolute;
+    visibility: hidden;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.seleccion p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+@media (max-width: 450px){
+    .slogan{font-size: 45px;}
+    .banner p{font-size: 14px;}
+}
